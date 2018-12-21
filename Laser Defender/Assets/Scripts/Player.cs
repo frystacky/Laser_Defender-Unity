@@ -7,8 +7,12 @@ public class Player : MonoBehaviour {
 
 
     //config parma's
+    [Header("Player")]
     [SerializeField] float moveSpeed = 10f;                          //changes move speed of player
     [SerializeField] float padding = 1f;                             //padding so player doesnt go half off the screen
+    [SerializeField] int health = 200;
+
+    [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
@@ -33,6 +37,28 @@ public class Player : MonoBehaviour {
         Move();
         Fire();
 	}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+
+        if (!damageDealer) { return; }
+
+        ProcessHit(damageDealer);
+
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+
+        damageDealer.Hit();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Fire()
     {

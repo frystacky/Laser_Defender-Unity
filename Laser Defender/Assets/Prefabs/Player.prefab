@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4914959091907798}
   - component: {fileID: 212551297107592478}
   - component: {fileID: 114761114677183458}
-  m_Layer: 0
+  - component: {fileID: 60934722268323122}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,6 +42,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60934722268323122
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043096682168378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.75}
+    newSize: {x: 0.99, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.49760577, y: 0.0730639}
+      - {x: 0.44061366, y: 0.069642276}
+      - {x: 0.4143953, y: 0.022612803}
+      - {x: 0.37273836, y: -0.010335089}
+      - {x: 0.2723939, y: 0.03575082}
+      - {x: 0.16978009, y: 0.08113314}
+      - {x: 0.12628718, y: 0.115982845}
+      - {x: 0.10936353, y: 0.21422578}
+      - {x: 0.08548458, y: 0.375}
+      - {x: -0.08415138, y: 0.37846243}
+      - {x: -0.11994905, y: 0.15635516}
+      - {x: -0.13196962, y: 0.11115077}
+      - {x: -0.20776765, y: 0.06595618}
+      - {x: -0.24415137, y: 0.04768735}
+      - {x: -0.26633224, y: 0.040873475}
+      - {x: -0.36797038, y: -0.019308709}
+      - {x: -0.39672342, y: -0.00051748904}
+      - {x: -0.44053218, y: 0.069826744}
+      - {x: -0.49499997, y: 0.06383725}
+      - {x: -0.47415137, y: -0.23461191}
+      - {x: -0.4328182, y: -0.26076224}
+      - {x: -0.4020655, y: -0.2137589}
+      - {x: -0.16230424, y: -0.27403414}
+      - {x: -0.1345757, y: -0.27076268}
+      - {x: -0.09239392, y: -0.36461267}
+      - {x: 0.07893924, y: -0.3819249}
+      - {x: 0.14013177, y: -0.28634775}
+      - {x: 0.252394, y: -0.24691248}
+      - {x: 0.40952817, y: -0.21251006}
+      - {x: 0.4367573, y: -0.24768789}
+      - {x: 0.46112093, y: -0.24807478}
 --- !u!114 &114761114677183458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
+  health: 200
   laserPrefab: {fileID: 1119154951091206, guid: da92c3b7c65e4d449a02d36f58c053d9,
     type: 2}
   projectileSpeed: 20
