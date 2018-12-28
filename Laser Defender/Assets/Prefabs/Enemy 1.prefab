@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
-  shotCounter: 0
+  scoreValue: 150
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
   enemyLaserPrefab: {fileID: 1119154951091206, guid: 10c07becb58e9a84eafc5768881cbc16,
@@ -126,7 +126,7 @@ MonoBehaviour:
   deathSFX: {fileID: 8300000, guid: 38e181b14b97e9e46b453bae95e81264, type: 3}
   deathSFXVolume: 0.75
   shootSFX: {fileID: 8300000, guid: a06b8abe7eeed5d4781a0cdd8002539b, type: 3}
-  shootSFXVolume: 0.5
+  shootSFXVolume: 0.4
 --- !u!212 &212712801765636062
 SpriteRenderer:
   m_ObjectHideFlags: 1

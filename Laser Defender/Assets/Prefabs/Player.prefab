@@ -112,7 +112,7 @@ MonoBehaviour:
   padding: 1
   health: 300
   deathSFX: {fileID: 8300000, guid: 82c748eb25b160e44a390612968016b8, type: 3}
-  deathSFXVolume: 0.75
+  deathSFXVolume: 0.5
   shootSFX: {fileID: 8300000, guid: cae77074a55a38b4b97f9e2332e13f26, type: 3}
   shootSFXVolume: 0.1
   laserPrefab: {fileID: 1119154951091206, guid: da92c3b7c65e4d449a02d36f58c053d9,
